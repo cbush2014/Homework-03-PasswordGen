@@ -1,0 +1,8 @@
+.border-dotted {
+    border-style:dashed;
+    border-width:2px;
+    border-radius:3px;
+    /* color:red; */
+    background-color: rgb(177, 87, 87);
+    text-align: center;
+}
