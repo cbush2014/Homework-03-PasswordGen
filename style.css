@@ -28,7 +28,7 @@
 .closeModal {
     /* position: abosolute; */
     float:right;
-    color: #ffffff;
+    /* color: #ffffff; if this is white, it has effect of hiding it (a litttle)*/
     right: -12px;
     text-align: center;
     top: -10px;
