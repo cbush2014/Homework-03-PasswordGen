@@ -127,7 +127,9 @@ document.querySelector("#newPwd").onclick = function () {
         console.log(num);
         newPwd += allowable[num];
     }
-    alert(newPwd);
+    // alert(newPwd);
+
+    document.querySelector("#securePwd").value = newPwd;
 
     // now we need to display this new password in the other window ????
 }
