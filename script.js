@@ -129,6 +129,19 @@ document.querySelector("#newPwd").onclick = function () {
     }
     // alert(newPwd);
 
+    //crbtemp
+    // a = document.getElementById(...);
+    // a.setAttribute("href", "somelink url");
+    // console.log(window.location.href);
+    // console.log("BEFORE href"+newPwd);
+    // alert("BEFORE href"+newPwd);
+    //THIS WILL CLOSE MY MODAL WINDOW
+    // SINCE THERE IS A BOOKMARK, THE PAGE IS NOT RELOADED( CLEARING OUT MY VARS)
+    window.location.href = "file:///C:/Users/cbush/sandbox/Homework-03-PasswordGen/index.html#closeModalPopUp";
+    // console.log("AFTER href"+newPwd);
+    // alert("AFTER href"+newPwd);
+ 
+
     document.querySelector("#securePwd").value = newPwd;
 
     // now we need to display this new password in the other window ????
