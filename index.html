@@ -28,6 +28,58 @@
         </div>
     </div>
 
+<!-- ============== START OF MODAL WINDOW=================================================================== -->
+    <div id="openModalPopUp" class="modalPopUp row d-flex justify-content-center bg-white">
+
+        <div class="col-6">
+            <div class="card m-3 mb-5">
+                <div><a href="#closeModalPopUp" title="New Password" class="closeModal">X</a></div>
+                <div class="card-body bg-white">
+                    <div class="row d-flex justify-content-center">                        
+                        <!-- this column below is where I needed to adjust the col width to 6, spent too long figuring this out -->
+                        <div class="col-6">  
+                            <div class="form-group shadow-textarea bg-white">
+                                <div class="col">
+                                  <h5>Enter password length:</h5>
+                                    <input class="form-control" type="text" id="pwdLength" onfocus="this.value=''" value="">
+                                </div>
+                                <div class="col">
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="chkNumeric" checked>Include numeric
+                                            characters</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="chkLower">Include lowercase
+                                            characters</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="chkUpper">Include uppercase
+                                            characters</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="" id="chkSpecial">Include special
+                                            characters</label>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-6 d-flex flex-row justify-content-center bg-white">
+                            <button class="btn btn-danger btn-lg rounded-pill" id="newPwd">New Password
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ============ END OF MODAL WINDOW ===================================================================== -->
+
+
     <div class="form-group shadow-textarea">
         <div class="col text-center">
                 <label for="securePwd"></label>; 
@@ -46,7 +98,9 @@
 
     <div class="row">
         <div class="col-md-6 d-flex flex-row justify-content-center">
+            <a href="#openModalPopUp">
             <button class="btn btn-danger btn-lg rounded-pill" id="generatePwd">Generate Password </button>
+            </a>
         </div>
 
         <div class="col-md-6 d-flex flex-row justify-content-center">
