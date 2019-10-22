@@ -137,7 +137,7 @@ document.querySelector("#newPwd").onclick = function () {
     // alert("BEFORE href"+newPwd);
     //THIS WILL CLOSE MY MODAL WINDOW
     // SINCE THERE IS A BOOKMARK, THE PAGE IS NOT RELOADED( CLEARING OUT MY VARS)
-    window.location.href = "file:///C:/Users/cbush/sandbox/Homework-03-PasswordGen/index.html#closeModalPopUp";
+    window.location.href = "#closeModalPopUp";
     // console.log("AFTER href"+newPwd);
     // alert("AFTER href"+newPwd);
  
